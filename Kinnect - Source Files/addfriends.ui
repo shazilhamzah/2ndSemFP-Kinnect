@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddFriends</class>
+ <widget class="QDialog" name="AddFriends">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:#131B26;
+}</string>
+  </property>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>741</width>
+     <height>251</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+  color: #222; /* Dark, rich black */
+  font-family: &quot;Loto&quot;, sans-serif; /* Ensure fallback font */
+  padding: 10px;
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ddd; /* Subtle light gray border */
+  border-radius: 5px; /* Gentle rounded corners */
+
+  /* Optional: Add hover effect for a touch of interactivity */
+  QTableWidget::item:hover {
+    background-color: #eee; /* Slightly lighter gray on hover */
+  }
+
+  /* Optional: Add a subtle shadow for depth (adjust as needed) */
+  QTableWidget {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Optional: Style the list items (text) for better readability */
+QTableWidget::item {
+  color: inherit; /* Inherit the dark black color from the parent */
+}
+</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>UserID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="labelpara">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>10</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelpara{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Friends</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>60</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="friendUsername">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>27</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border:none;
+	background-color:#131B26;
+	color:white;
+	font-size:20px;
+}	</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="usernamelabel">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>10</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#usernamelabel{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addFriendsBtn">
+   <property name="geometry">
+    <rect>
+     <x>660</x>
+     <y>345</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#addFriendsBtn {
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton#addFriendsBtn:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>Add</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

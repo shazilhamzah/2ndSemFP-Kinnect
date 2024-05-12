@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LoginPage</class>
+ <widget class="QDialog" name="LoginPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:#131B26;
+}</string>
+  </property>
+  <widget class="QLabel" name="labelheading">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>321</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelheading{
+	color: #FFBD59;
+	font-size: 80px;
+	font-weight: 800;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Kinnect</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelpara">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>130</y>
+     <width>821</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelpara{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Login Page</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="usernamelabel">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>280</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#usernamelabel{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Username:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="username">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>300</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border:none;
+	background-color:#131B26;
+	color:white;
+	font-size:20px;
+}	</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>333</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewUsers">
+   <property name="geometry">
+    <rect>
+     <x>89</x>
+     <y>410</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#viewUsers {
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton#viewUsers:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>View Users</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="loginButton">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>410</y>
+     <width>120</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#loginButton {
+	background-color: #fff;
+	border:2px solid gray;
+	color: black;
+	border-style: solid;
+	border-color:fff;
+	border-width: 0px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton#loginButton:hover {
+  background-color: #CECECE; /* slightly darker orange on hover */
+  border-color:#CECECE;
+}</string>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

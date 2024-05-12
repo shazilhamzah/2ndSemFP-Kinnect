@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PostView</class>
+ <widget class="QDialog" name="PostView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1150</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:#131B26;
+}</string>
+  </property>
+  <widget class="QLabel" name="commentLabel">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>512</y>
+     <width>251</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#commentLabel{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Comment:</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="comment">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>527</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit{
+	border:none;
+	background-color:#131B26;
+	color:white;
+	font-size:20px;
+}	</string>
+   </property>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>560</y>
+     <width>311</width>
+     <height>3</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelpara">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>160</y>
+     <width>821</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelpara{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Login Page</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelheading">
+   <property name="geometry">
+    <rect>
+     <x>81</x>
+     <y>50</y>
+     <width>321</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelheading{
+	color: #FFBD59;
+	font-size: 80px;
+	font-weight: 800;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Kinnect</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="postbtn">
+   <property name="geometry">
+    <rect>
+     <x>604</x>
+     <y>525</y>
+     <width>120</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#postbtn {
+	background-color: #fff;
+	border:2px solid gray;
+	color: black;
+	border-style: solid;
+	border-color:fff;
+	border-width: 0px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton#postbtn:hover {
+  background-color: #CECECE; /* slightly darker orange on hover */
+  border-color:#CECECE;
+}</string>
+   </property>
+   <property name="text">
+    <string>Post</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="date">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>214</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#date{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Date</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>260</y>
+     <width>1001</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTextEdit{
+	background-color:#131B26;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+	border: 1px solid white;
+}</string>
+   </property>
+   <property name="readOnly">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="postid">
+   <property name="geometry">
+    <rect>
+     <x>1040</x>
+     <y>410</y>
+     <width>41</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#postid{
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>#99</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="likeBtn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>410</y>
+     <width>120</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>Like</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewlikesBtn">
+   <property name="geometry">
+    <rect>
+     <x>972</x>
+     <y>525</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>View Likes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewComments">
+   <property name="geometry">
+    <rect>
+     <x>743</x>
+     <y>525</y>
+     <width>211</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>View Comments</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewComments_2">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>410</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>Share memory</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

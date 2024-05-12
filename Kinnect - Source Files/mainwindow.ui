@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="labelheading">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>20</y>
+      <width>321</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#labelheading{
+	color: #FFBD59;
+	font-size: 80px;
+	font-weight: 800;
+	font-family: 'Lato';
+}</string>
+    </property>
+    <property name="text">
+     <string>Kinnect</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelpara">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>130</y>
+      <width>821</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel#labelpara{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+    </property>
+    <property name="text">
+     <string>Spark in-depth conversations and engaging experiences.</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="signupButton">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>300</y>
+      <width>120</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">/* QT C++ QButton Stylesheet */
+QPushButton#signupButton {
+  background-color: #FFBD59;
+  border: 5px solid #FFBD59;
+  border-radius: 16px;
+  color: black;
+  font-family: &quot;Lato&quot;;
+  font-weight: 700;
+  font-size: 24px;
+  transition: background-color 200ms, border-color 200ms; 
+}
+
+QPushButton#signupButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+    </property>
+    <property name="text">
+     <string>SignUp</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="loginButton">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>300</y>
+      <width>120</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton#loginButton {
+	background-color: #fff;
+	border:2px solid gray;
+	color: black;
+	border-style: solid;
+	border-color:fff;
+	border-width: 0px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton#loginButton:hover {
+  background-color: #CECECE; /* slightly darker orange on hover */
+  border-color:#CECECE;
+}</string>
+    </property>
+    <property name="text">
+     <string>Login</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

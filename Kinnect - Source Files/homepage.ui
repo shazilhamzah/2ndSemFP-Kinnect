@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HomePage</class>
+ <widget class="QDialog" name="HomePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:#131B26;
+}</string>
+  </property>
+  <widget class="QLabel" name="welcomeLabel">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>0</y>
+     <width>401</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#welcomeLabel{
+	color: #FFBD59;
+	font-size: 55px;
+	font-weight: 800;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Welcome</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="usernameLabel">
+   <property name="geometry">
+    <rect>
+     <x>301</x>
+     <y>26</y>
+     <width>471</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#usernameLabel{
+	color: #fff;
+	font-size: 40px;
+	font-weight: 600;
+	font-family: 'Lato';
+	
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addFriendsBtn">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>530</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#addFriendsBtn {
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton#addFriendsBtn:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>Add Friends</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logoutBtn">
+   <property name="geometry">
+    <rect>
+     <x>940</x>
+     <y>530</y>
+     <width>131</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#logoutBtn{
+	background-color: red;
+	border:2px solid red;
+	color: black;
+	border-style: solid;
+	border-color:red;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton#logoutBtn:hover {
+  background-color: #FE4D4D; /* slightly darker orange on hover */
+  border-color:#FE4D4D;
+}</string>
+   </property>
+   <property name="text">
+    <string>Logout</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="addPostBtn_2">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>427</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>Post</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="activityType">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>377</y>
+     <width>91</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+	background-color:white;
+}</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="activityValue">
+   <property name="geometry">
+    <rect>
+     <x>894</x>
+     <y>377</y>
+     <width>91</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+	background-color:white;
+	color:black;
+	font-family:&quot;Lato&quot;;
+}</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="description">
+   <property name="geometry">
+    <rect>
+     <x>810</x>
+     <y>140</y>
+     <width>261</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLineEdit#description{
+	background-color:white;
+	color:black;
+	font-family:&quot;Lato&quot;;
+	border-radius: 5px;
+}</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>100</y>
+     <width>531</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+  color: #222; /* Dark, rich black */
+  font-family: &quot;Loto&quot;, sans-serif; /* Ensure fallback font */
+  padding: 10px;
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ddd; /* Subtle light gray border */
+  border-radius: 5px; /* Gentle rounded corners */
+
+  /* Optional: Add hover effect for a touch of interactivity */
+  QTableWidget::item:hover {
+    background-color: #eee; /* Slightly lighter gray on hover */
+  }
+
+  /* Optional: Add a subtle shadow for depth (adjust as needed) */
+  QTableWidget {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Optional: Style the list items (text) for better readability */
+QTableWidget::item {
+  color: inherit; /* Inherit the dark black color from the parent */
+}
+</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Post ID</string>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Post</string>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Activity</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QPushButton" name="refreshBtn">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>20</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>Refresh</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allPages">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>530</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>View Pages</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="pageValue">
+   <property name="geometry">
+    <rect>
+     <x>999</x>
+     <y>377</y>
+     <width>91</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QComboBox{
+	background-color:white;
+	color:black;
+	font-family:&quot;Lato&quot;;
+}</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="YourPosts">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>20</y>
+     <width>151</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>Your Posts</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="viewMemories">
+   <property name="geometry">
+    <rect>
+     <x>378</x>
+     <y>530</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+	background-color: #FFBD59;
+	border:2px solid #FFBD59;
+	color: black;
+	border-style: solid;
+	border-color:#FFBD59;
+	border-width: 5px;
+	border-radius: 16px;
+	font-family: &quot;Lato&quot;;
+	font-weight: 700;
+	font-size:24px;
+}
+QPushButton:hover {
+  background-color: #FF8D25; /* slightly darker orange on hover */
+  border-color:#FF8D25;
+}</string>
+   </property>
+   <property name="text">
+    <string>View Memories</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

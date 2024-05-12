@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>UserProfile</class>
+ <widget class="QDialog" name="UserProfile">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1143</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:#131B26;
+}</string>
+  </property>
+  <widget class="QLabel" name="labelpara">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>80</y>
+     <width>821</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelpara{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Posts</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>140</y>
+     <width>601</width>
+     <height>371</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+  color: #222; /* Dark, rich black */
+  font-family: &quot;Loto&quot;, sans-serif; /* Ensure fallback font */
+  padding: 10px;
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ddd; /* Subtle light gray border */
+  border-radius: 5px; /* Gentle rounded corners */
+
+  /* Optional: Add hover effect for a touch of interactivity */
+  QTableWidget::item:hover {
+    background-color: #eee; /* Slightly lighter gray on hover */
+  }
+
+  /* Optional: Add a subtle shadow for depth (adjust as needed) */
+  QTableWidget {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Optional: Style the list items (text) for better readability */
+QTableWidget::item {
+  color: inherit; /* Inherit the dark black color from the parent */
+}
+</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Post ID</string>
+    </property>
+    <property name="font">
+     <font>
+      <bold>false</bold>
+     </font>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Post</string>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Activity</string>
+    </property>
+   </column>
+  </widget>
+  <widget class="QLabel" name="totalPosts">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>170</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#totalPosts{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Total Posts:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numberPosts">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>170</y>
+     <width>41</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#numberPosts{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="totalLikes">
+   <property name="geometry">
+    <rect>
+     <x>780</x>
+     <y>230</y>
+     <width>171</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#totalLikes{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Total Likes:</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="numberLikes">
+   <property name="geometry">
+    <rect>
+     <x>960</x>
+     <y>230</y>
+     <width>41</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#numberLikes{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>12</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="username">
+   <property name="geometry">
+    <rect>
+     <x>88</x>
+     <y>0</y>
+     <width>831</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#username{
+	color: #FFBD59;
+	font-size: 50px;
+	font-weight: 800;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>USERNAME HERE</string>
+   </property>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>tableWidget</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

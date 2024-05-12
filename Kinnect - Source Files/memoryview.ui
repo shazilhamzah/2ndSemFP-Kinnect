@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MemoryView</class>
+ <widget class="QDialog" name="MemoryView">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1097</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:#131B26;
+}</string>
+  </property>
+  <widget class="QLabel" name="labelpara">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>60</y>
+     <width>821</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelpara{
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	font-family: 'Lato';
+}</string>
+   </property>
+   <property name="text">
+    <string>Memories</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tableWidget">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>971</width>
+     <height>401</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+  color: #222; /* Dark, rich black */
+  font-family: &quot;Loto&quot;, sans-serif; /* Ensure fallback font */
+  padding: 10px;
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ddd; /* Subtle light gray border */
+  border-radius: 5px; /* Gentle rounded corners */
+
+  /* Optional: Add hover effect for a touch of interactivity */
+  QTableWidget::item:hover {
+    background-color: #eee; /* Slightly lighter gray on hover */
+  }
+
+  /* Optional: Add a subtle shadow for depth (adjust as needed) */
+  QTableWidget {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Optional: Style the list items (text) for better readability */
+QTableWidget::item {
+  color: inherit; /* Inherit the dark black color from the parent */
+}
+</string>
+   </property>
+   <column>
+    <property name="text">
+     <string>Username</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>PostID</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Post</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Activity</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Post Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Sharing Date</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string/>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ViewComments</class>
+ <widget class="QDialog" name="ViewComments">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>900</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color:#131B26;
+}</string>
+  </property>
+  <widget class="QTableWidget" name="commentors">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>160</y>
+     <width>831</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableWidget {
+  color: #222; /* Dark, rich black */
+  font-family: &quot;Loto&quot;, sans-serif; /* Ensure fallback font */
+  padding: 10px;
+  background-color: #f5f5f5; /* Light gray background */
+  border: 1px solid #ddd; /* Subtle light gray border */
+  border-radius: 5px; /* Gentle rounded corners */
+
+  /* Optional: Add hover effect for a touch of interactivity */
+  QTableWidget::item:hover {
+    background-color: #eee; /* Slightly lighter gray on hover */
+  }
+
+  /* Optional: Add a subtle shadow for depth (adjust as needed) */
+  QTableWidget {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Optional: Style the list items (text) for better readability */
+QTableWidget::item {
+  color: inherit; /* Inherit the dark black color from the parent */
+}
+</string>
+   </property>
+   <column/>
+   <column/>
+   <column/>
+  </widget>
+  <widget class="QLabel" name="labelpara1">
+   <property name="geometry">
+    <rect>
+     <x>214</x>
+     <y>40</y>
+     <width>371</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelpara1{
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: 'Lato';
+	
+}</string>
+   </property>
+   <property name="text">
+    <string>You are viewing comments on</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="toEdit">
+   <property name="geometry">
+    <rect>
+     <x>587</x>
+     <y>20</y>
+     <width>301</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#toEdit{
+	color: #FFBD59;
+	font-size: 25px;
+	font-weight: 800;
+	font-family: 'Lato';
+	text-align:center;
+}</string>
+   </property>
+   <property name="text">
+    <string>Welcome,</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelpara1_2">
+   <property name="geometry">
+    <rect>
+     <x>446</x>
+     <y>80</y>
+     <width>51</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel#labelpara1_2{
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	font-family: 'Lato';
+	
+}</string>
+   </property>
+   <property name="text">
+    <string>post</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
